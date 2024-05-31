@@ -1,4 +1,10 @@
-from crewai_tools import YoutubeChannelSearchTool
+from crewai_tools import SerperDevTool
 
-# Initialize the tool with a specific Youtube channel handle to target your search
-yt_tool = YoutubeChannelSearchTool(youtube_channel_handle="@krishnaik06")
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+os.environ['SERPER_API_KEY']=os.getenv('SERPER_API_KEY')
+
+tool=SerperDevTool()
