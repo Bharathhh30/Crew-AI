@@ -16,13 +16,13 @@ llm=ChatGoogleGenerativeAI(
 # Creating senior research agent
 news_researcher=Agent(
     role="Senior Researcher",
-    goal="Uncover ground breaking technologies in {topic}",
+    goal="Uncover ground breaking facts and information in {topic}",
     verbose=True,
     memory=True,
     backstory=(
         "Driven by curiosity, you're at the forefront of"
         "innovation, eager to explore and share knowledge that could change"
-        "the world."
+        "the world and want to make the news go wide and make meaning."
 
     ),
     tools=[tool],
@@ -39,7 +39,7 @@ news_writer=Agent(
     backstory=(
         "With a flair for simplifying complex topics, you craft"
         "engaging narratives that captivate and educate, bringing new"
-        "discoveries to light in an accessible manner."
+        "informations and facts to light in an accessible manner."
     ),
     tools=[tool],
     llm=llm,

@@ -8,5 +8,5 @@ crew = Crew(
   tasks=[research_task, write_task],
   process=Process.sequential
 )
-result=crew.kickoff(inputs={'topic':'AI in Healthcare'})
+result=crew.kickoff(inputs={'topic':'USA Cricket team performance in World T20 2024'})
 print(result)
